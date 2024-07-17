@@ -43,9 +43,7 @@ include 'plugins/koneksi.php';
                     <li class="nav-item">
                         <a class="nav-link" href="daftar_buku.php">Daftar Buku</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#tentang">Tentang</a>
-                    </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="Hubungi_kami.php">Kontak Kami</a>
                     </li>

@@ -1,13 +1,4 @@
-<?php
-session_start();
 
-// Cek apakah pengguna sudah login
-if (!isset($_SESSION['username'])) {
-    // Jika belum login, redirect ke halaman login
-    header("Location: login.php");
-    exit();
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,12 +8,12 @@ if (!isset($_SESSION['username'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NovelOnline | Dashboard</title>
-    <link rel="icon" href="dist/img/library.png" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="icon" href="../dist/img/library.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/styles.css" />
     <!-- FontAwesome  -->
-    <link rel="stylesheet" href="assets/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../assets/fontawesome-free-6.3.0-web/css/all.min.css">
     <!-- Bootstrap css -->
-    <link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -30,7 +21,7 @@ if (!isset($_SESSION['username'])) {
     <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-lg">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="dist/img/library.png" alt="" width="50" height="40" />
+                <img src="../dist/img/library.png" alt="" width="50" height="40" />
             </a>
             <a class="navbar-brand" href="#">BacaOnline</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,11 +33,14 @@ if (!isset($_SESSION['username'])) {
                         <a class="nav-link" href="#layanan">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="daftar_buku.php">Daftar Buku</a>
+                        <a class="nav-link" href="daftar_buku1.php">Daftar Buku</a>
                     </li>
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="Hubungi_kami.php">Kontak Kami</a>
+                        <a class="nav-link" href="Hubungi_kami1.php">Kontak Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../login.php">Login</a>
                     </li>
                 </ul>
             </div>
@@ -59,7 +53,7 @@ if (!isset($_SESSION['username'])) {
         <div class="content text-center">
             <h1 class="fw-bold">NovelOnline</h1>
             <h2 class="fw">Nikmati Petualangan Tanpa Batas di Dunia Sastra!</h2>
-            <a href="daftar_buku.php">Explore</a>
+            <a href="daftar_buku1.php">Explore</a>
         </div>
 
         <div class="content text-center">
@@ -77,16 +71,14 @@ if (!isset($_SESSION['username'])) {
             <div class="row pt-4 gx-4 gy-4">
 
                 <!-- Buku-buku -->
-                <div class="col-md-4 ">
-                    <div class="card crop-img ">
-                        <img src="images/bumi.jpg" class="card-img-top " width="200 " height="500 " />
-                        <div class="card-body " >
-                            <h5 class="card-title ">BUMI</h5>
+            <div class="col-md-4">
+                    <div class="card crop-img">
+                        <img src="../images/bumi.jpg" class="card-img-top" width="200" height="500" />
+                        <div class="card-body">
+                            <h5 class="card-title">BUMI</h5>
                             <h6 class="card-text">Penulis: Tere Liye</h6>
-                           <p class="card-text text-truncate">Novel terbitan tahun 2017 ini, mengangkat tema persahabatan, percintaan, kekeluargaan, dan rasa kehilangan. 
-                            Dengan berlatarkan waktu di tahun 90-an dan 2000, novel ini mampu membius para pembacanya untuk menerobos ruang masa lalu 
-                            dan kembali melihat peristiwa yang terjadi di tahun yang bersangkutan.</p>
-                            <button class="card-title-btn">Selengkapnya</button>
+                            <p class="card-text text-truncate">Novel terbitan tahun 2017 ini, mengangkat tema persahabatan, percintaan, kekeluargaan, dan rasa kehilangan. Dengan berlatarkan waktu di tahun 90-an dan 2000, novel ini mampu membius para pembacanya untuk menerobos ruang masa lalu dan kembali melihat peristiwa yang terjadi di tahun yang bersangkutan.</p>
+                            <a href="daftar_buku1.php" class="btn btn-primary stretched-link">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -94,14 +86,14 @@ if (!isset($_SESSION['username'])) {
             <!-- BUKU2 -->
                 <div class="col-md-4 ">
                     <div class="card crop-img ">
-                        <img src="images/bulan.jpg" class="card-img-top " width="200 " height="500 " />
+                        <img src="../images/bulan.jpg" class="card-img-top " width="200 " height="500 " />
                         <div class="card-body " >
                             <h5 class="card-title ">BULAN</h5>
                             <h6 class="card-text">Penulis: Tere Liye</h6>
                             <p class="card-text text-truncate">Novel terbitan tahun 2017 ini, mengangkat tema persahabatan, percintaan, kekeluargaan, dan rasa kehilangan. 
                             Dengan berlatarkan waktu di tahun 90-an dan 2000, novel ini mampu membius para pembacanya untuk menerobos ruang masa lalu 
                             dan kembali melihat peristiwa yang terjadi di tahun yang bersangkutan.</p>
-                            <button class="card-title-btn">Selengkapnya</button>
+                            <a href="daftar_buku1.php" class="btn btn-primary stretched-link">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -110,14 +102,14 @@ if (!isset($_SESSION['username'])) {
                 <!-- BBUKU3 -->
                 <div class="col-md-4 ">
                     <div class="card crop-img ">
-                        <img src="images/bintang.jpg" class="card-img-top " width="200 " height="500 " />
+                        <img src="../images/bintang.jpg" class="card-img-top " width="200 " height="500 " />
                         <div class="card-body " >
                             <h5 class="card-title ">BINTANG</h5>
                             <h6 class="card-text">Penulis: Tere Liye</h6>
                             <p class="card-text text-truncate">Novel terbitan tahun 2017 ini, mengangkat tema persahabatan, percintaan, kekeluargaan, dan rasa kehilangan. 
                             Dengan berlatarkan waktu di tahun 90-an dan 2000, novel ini mampu membius para pembacanya untuk menerobos ruang masa lalu 
                             dan kembali melihat peristiwa yang terjadi di tahun yang bersangkutan.</p>
-                            <button class="card-title-btn">Selengkapnya</button>
+                            <a href="daftar_buku1.php" class="btn btn-primary stretched-link">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -125,14 +117,14 @@ if (!isset($_SESSION['username'])) {
                 <!-- BBUKU4 -->
                 <div class="col-md-4 ">
                     <div class="card crop-img ">
-                        <img src="images/madilog.jpg" class="card-img-top " width="200 " height="500 " />
+                        <img src="../images/madilog.jpg" class="card-img-top " width="200 " height="500 " />
                         <div class="card-body " >
                             <h5 class="card-title ">MADILOG</h5>
                             <h6 class="card-text">Penulis: Tan Malaka</h6>
                             <p class="card-text text-truncate">Novel terbitan tahun 2017 ini, mengangkat tema persahabatan, percintaan, kekeluargaan, dan rasa kehilangan. 
                             Dengan berlatarkan waktu di tahun 90-an dan 2000, novel ini mampu membius para pembacanya untuk menerobos ruang masa lalu 
                             dan kembali melihat peristiwa yang terjadi di tahun yang bersangkutan.</p>
-                            <button class="card-title-btn">Selengkapnya</button>
+                             <a href="daftar_buku1.php" class="btn btn-primary stretched-link">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -140,32 +132,18 @@ if (!isset($_SESSION['username'])) {
                 <!-- BBUKU5 -->
                 <div class="col-md-4 ">
                     <div class="card crop-img ">
-                        <img src="images/aksimasa.jpg" class="card-img-top " width="200 " height="500 " />
+                        <img src="../images/aksimasa.jpg" class="card-img-top " width="200 " height="500 " />
                         <div class="card-body " >
                             <h5 class="card-title ">AKSI MASA</h5>
                             <h6 class="card-text">Penulis: Tan Malaka</h6>
                             <p class="card-text text-truncate">Novel terbitan tahun 2017 ini, mengangkat tema persahabatan, percintaan, kekeluargaan, dan rasa kehilangan. 
                             Dengan berlatarkan waktu di tahun 90-an dan 2000, novel ini mampu membius para pembacanya untuk menerobos ruang masa lalu 
                             dan kembali melihat peristiwa yang terjadi di tahun yang bersangkutan.</p>
-                            <button class="card-title-btn">Selengkapnya</button>
-                        </div>
+                            <a href="daftar_buku1.php" class="btn btn-primary stretched-link">Selengkapnya</a>
                     </div>
                 </div>
 
-                <!-- BBUKU5 -->
-                <div class="col-md-4 ">
-                    <div class="card crop-img ">
-                        <img src="images/ekonomi.jpg" class="card-img-top " width="200 " height="500 " />
-                        <div class="card-body " >
-                            <h5 class="card-title ">PENGANTAR EKONOMI</h5>
-                            <h6 class="card-text">Penulis: Henry Adam</h6>
-                            <p class="card-text text-truncate">Novel terbitan tahun 2017 ini, mengangkat tema persahabatan, percintaan, kekeluargaan, dan rasa kehilangan. 
-                            Dengan berlatarkan waktu di tahun 90-an dan 2000, novel ini mampu membius para pembacanya untuk menerobos ruang masa lalu 
-                            dan kembali melihat peristiwa yang terjadi di tahun yang bersangkutan.</p>
-                            <button class="card-title-btn">Selengkapnya</button>
-                        </div>
-                    </div>
-                </div>
+                
 
               
 
