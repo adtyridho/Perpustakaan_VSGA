@@ -52,9 +52,8 @@
 
     <div class="hero">
         <img src="../dist/img/bg_library.jpg" alt="Library Image 1">
-        <img src="dist/img/bg_library2.jpg" alt="Library Image 2">
-        <img src="dist/img/bg_library5.jpg" alt="Library Image 3">
-        <img src="dist/img/bg_library3.jpg" alt="Library Image 4">
+        <img src="../dist/img/bg_library2.jpg" alt="Library Image 2">
+        
         <div class="content">
             <h1 class="text-white">Daftar Buku</h1>
         </div>

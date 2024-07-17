@@ -48,6 +48,9 @@ if (!isset($_SESSION['username'])) {
                     <li class="nav-item">
                         <a class="nav-link" href="Hubungi_kami.php">Kontak Kami</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout.php">logout</a>
+                    </li>
                 </ul>
             </div>
         </div>
