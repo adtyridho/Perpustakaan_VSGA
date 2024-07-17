@@ -59,8 +59,8 @@ if (!isset($_SESSION['username'])) {
     <!-- Banner -->
     <section class="hero">
         <div class="content text-center">
-            <h1 class="fw-bold">Selamat Datang di NovelOnline</h1>
-            <h2 class="fw-bold">Nikmati Petualangan Tanpa Batas di Dunia Sastra!</h2>
+            <h1 class="fw-bold">NovelOnline</h1>
+            <h2 class="fw">Nikmati Petualangan Tanpa Batas di Dunia Sastra!</h2>
             <a href="daftar_buku.php">Explore</a>
         </div>
 
@@ -169,36 +169,7 @@ if (!isset($_SESSION['username'])) {
                     </div>
                 </div>
 
-                <!-- BBUKU5 -->
-                <div class="col-md-4 ">
-                    <div class="card crop-img ">
-                        <img src="images/atlas.jpg" class="card-img-top " width="200 " height="500 " />
-                        <div class="card-body " >
-                            <h5 class="card-title ">ATLAS DUNIA</h5>
-                            <h6 class="card-text">Penulis: Brian Jones</h6>
-                            <p class="card-text text-truncate">Novel terbitan tahun 2017 ini, mengangkat tema persahabatan, percintaan, kekeluargaan, dan rasa kehilangan. 
-                            Dengan berlatarkan waktu di tahun 90-an dan 2000, novel ini mampu membius para pembacanya untuk menerobos ruang masa lalu 
-                            dan kembali melihat peristiwa yang terjadi di tahun yang bersangkutan.</p>
-                            <button class="card-title-btn">Selengkapnya</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- /BUKU -->
-                 !-- BBUKU5 -->
-                <div class="col-md-4 ">
-                    <div class="card crop-img ">
-                        <img src="images/atlas.jpg" class="card-img-top " width="200 " height="500 " />
-                        <div class="card-body " >
-                            <h5 class="card-title ">ATLAS DUNIA</h5>
-                            <h6 class="card-text">Penulis: Brian Jones</h6>
-                            <p class="card-text text-truncate">Novel terbitan tahun 2017 ini, mengangkat tema persahabatan, percintaan, kekeluargaan, dan rasa kehilangan. 
-                            Dengan berlatarkan waktu di tahun 90-an dan 2000, novel ini mampu membius para pembacanya untuk menerobos ruang masa lalu 
-                            dan kembali melihat peristiwa yang terjadi di tahun yang bersangkutan.</p>
-                            <button class="card-title-btn">Selengkapnya</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- /BUKU -->
+              
 
 
             </div>
